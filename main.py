@@ -52,7 +52,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # React URL
+    allow_origins=["http://localhost:3000", "https://hello-react-hgne.onrender.com"],  # React URL
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
